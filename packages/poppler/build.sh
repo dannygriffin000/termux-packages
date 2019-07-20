@@ -7,6 +7,8 @@ TERMUX_PKG_SRCURL=https://poppler.freedesktop.org/poppler-${TERMUX_PKG_VERSION}.
 TERMUX_PKG_SHA256=e62cd4053f851eecc4a6aa2b81d739fbab1d67b3c60b31ebac7049483cc617b1
 # libcairo and littlecms is used by pdftocairo:
 TERMUX_PKG_DEPENDS="libc++, libiconv, fontconfig, glib, libcairo, libpng, libjpeg-turbo, libtiff, littlecms, openjpeg, freetype, libcurl"
+TERMUX_PKG_BREAKS="poppler-dev"
+TERMUX_PKG_REPLACES="poppler-dev"
 #texlive needs the xpdf headers
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -DENABLE_GLIB=ON

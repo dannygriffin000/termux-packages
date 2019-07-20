@@ -6,6 +6,8 @@ TERMUX_PKG_VERSION=10.3.14
 TERMUX_PKG_REVISION=6
 TERMUX_PKG_SRCURL=https://ftp.osuosl.org/pub/mariadb/mariadb-$TERMUX_PKG_VERSION/source/mariadb-$TERMUX_PKG_VERSION.tar.gz
 TERMUX_PKG_SHA256=ba1c94d92fc8ebdf9b8a1d1b93ed6aeeead33da507efbbd4afcf49f32023e054
+TERMUX_PKG_BREAKS="mariadb-dev"
+TERMUX_PKG_REPLACES="mariadb-dev"
 TERMUX_PKG_DEPENDS="libc++, libiconv, liblzma, ncurses, libedit, openssl, pcre, libcrypt, libandroid-support, libandroid-glob, zlib"
 
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="

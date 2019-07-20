@@ -12,7 +12,8 @@ TERMUX_PKG_DEPENDS="libc++, openssl, c-ares, libicu, zlib"
 TERMUX_PKG_RM_AFTER_INSTALL="lib/node_modules/npm/html lib/node_modules/npm/make.bat share/systemtap lib/dtrace"
 TERMUX_PKG_BUILD_IN_SRC=yes
 TERMUX_PKG_CONFLICTS="nodejs-lts, nodejs-current"
-TERMUX_PKG_REPLACES="nodejs-current"
+TERMUX_PKG_BREAKS="nodejs-dev"
+TERMUX_PKG_REPLACES="nodejs-current, nodejs-dev"
 
 termux_step_configure() {
 	local DEST_CPU

@@ -6,6 +6,8 @@ TERMUX_PKG_SRCURL=https://mirrors.kernel.org/debian/pool/main/d/dpkg/dpkg_${TERM
 TERMUX_PKG_SHA256=4c27fededf620c0aa522fff1a48577ba08144445341257502e7730f2b1a296e8
 # with the extract.c.patch we remove the -p and --warning=no-timestamp tar options so we can use busybox tar
 TERMUX_PKG_DEPENDS="busybox, liblzma, zlib"
+TERMUX_PKG_BREAKS="dpkg-dev"
+TERMUX_PKG_REPLACES="dpkg-dev"
 TERMUX_PKG_ESSENTIAL=yes
 
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="

@@ -7,6 +7,8 @@ TERMUX_PKG_REVISION=1
 TERMUX_PKG_SRCURL="https://dbus.freedesktop.org/releases/dbus/dbus-$TERMUX_PKG_VERSION.tar.gz"
 TERMUX_PKG_SHA256=54a22d2fa42f2eb2a871f32811c6005b531b9613b1b93a0d269b05e7549fec80
 TERMUX_PKG_DEPENDS="libexpat"
+TERMUX_PKG_BREAKS="dbus-dev"
+TERMUX_PKG_REPLACES="dbus-dev"
 TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--disable-libaudit --disable-systemd --disable-tests"
 

@@ -6,6 +6,8 @@ TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
 TERMUX_PKG_SRCURL=https://cairographics.org/releases/cairo-${TERMUX_PKG_VERSION}.tar.xz
 TERMUX_PKG_DEPENDS="libandroid-support, libpixman, fontconfig, freetype, libpng"
+TERMUX_PKG_BREAKS="libcairo-dev"
+TERMUX_PKG_REPLACES="libcairo-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 ac_cv_lib_lzo2_lzo2a_decompress=no
 --disable-gtk-doc-html

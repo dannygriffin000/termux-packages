@@ -10,6 +10,8 @@ TERMUX_PKG_CONFFILES="etc/mke2fs.conf"
 
 ## util-linux provides libblkid
 TERMUX_PKG_DEPENDS="libuuid, util-linux"
+TERMUX_PKG_BREAKS="e2fsprogs-dev"
+TERMUX_PKG_REPLACES="e2fsprogs-dev"
 
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 --sbindir=${TERMUX_PREFIX}/bin

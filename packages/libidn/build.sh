@@ -6,6 +6,8 @@ TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=f11af1005b46b7b15d057d7f107315a1ad46935c7fcdf243c16e46ec14f0fe1e
 TERMUX_PKG_SRCURL=https://mirrors.kernel.org/gnu/libidn/libidn-${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_DEPENDS="libiconv"
+TERMUX_PKG_BREAKS="libidn-dev"
+TERMUX_PKG_REPLACES="libidn-dev"
 
 # Remove the idn tool for now, add it as subpackage if desired::
 TERMUX_PKG_RM_AFTER_INSTALL="bin/idn share/man/man1/idn.1 share/emacs"

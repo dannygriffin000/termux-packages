@@ -6,6 +6,8 @@ TERMUX_PKG_REVISION=3
 TERMUX_PKG_SRCURL=https://mirrors.kernel.org/gnu/gdb/gdb-${TERMUX_PKG_VERSION}.tar.xz
 TERMUX_PKG_SHA256=802f7ee309dcc547d65a68d61ebd6526762d26c3051f52caebe2189ac1ffd72e
 TERMUX_PKG_DEPENDS="libc++, liblzma, libexpat, readline, ncurses, libmpfr, zlib"
+TERMUX_PKG_BREAKS="gdb-dev"
+TERMUX_PKG_REPLACES="gdb-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 --with-system-readline
 --with-curses

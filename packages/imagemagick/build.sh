@@ -5,6 +5,8 @@ TERMUX_PKG_VERSION=7.0.8.56
 TERMUX_PKG_SRCURL=https://github.com/ImageMagick/ImageMagick/archive/$(echo $TERMUX_PKG_VERSION | sed 's/\(.*\)\./\1-/').tar.gz
 TERMUX_PKG_SHA256=061b80fdc3dc254acb6d61166162e4cdfed5f1ded19034ca0cc15497c4e19f38
 TERMUX_PKG_DEPENDS="fftw, pango, glib, libbz2, libjpeg-turbo, liblzma, libpng, libtiff, libxml2, openjpeg, littlecms, libwebp"
+TERMUX_PKG_BREAKS="imagemagick-dev"
+TERMUX_PKG_REPLACES="imagemagick-dev"
 
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 --disable-largefile

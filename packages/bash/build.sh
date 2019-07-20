@@ -2,6 +2,8 @@ TERMUX_PKG_HOMEPAGE=https://www.gnu.org/software/bash/
 TERMUX_PKG_DESCRIPTION="A sh-compatible shell that incorporates useful features from the Korn shell (ksh) and C shell (csh)"
 TERMUX_PKG_LICENSE="GPL-3.0"
 TERMUX_PKG_DEPENDS="ncurses, readline (>= 8.0), libandroid-support, libiconv, termux-tools, command-not-found"
+TERMUX_PKG_BREAKS="bash-dev"
+TERMUX_PKG_REPLACES="bash-dev"
 _MAIN_VERSION=5.0
 _PATCH_VERSION=7
 TERMUX_PKG_REVISION=2

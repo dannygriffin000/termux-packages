@@ -8,8 +8,8 @@ TERMUX_PKG_SHA256=430ae8354789de4fd19ee52f3b1f739e1fba576f0aded0897c3c2bc00fb387
 TERMUX_PKG_BUILD_IN_SRC=yes
 TERMUX_PKG_DEPENDS="libc++, libbz2, libiconv, liblzma, zlib"
 TERMUX_PKG_BUILD_DEPENDS="python, python2"
-TERMUX_PKG_BREAKS="libboost-python (<= 1.65.1-2)"
-TERMUX_PKG_REPLACES="libboost-python (<= 1.65.1-2)"
+TERMUX_PKG_BREAKS="libboost-python (<= 1.65.1-2), boost-dev"
+TERMUX_PKG_REPLACES="libboost-python (<= 1.65.1-2), boost-dev"
 
 termux_step_make_install() {
 	CXXFLAGS+=" -std=c++14"

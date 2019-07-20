@@ -7,4 +7,6 @@ TERMUX_PKG_REVISION=2
 TERMUX_PKG_SHA256=43091fea4752101f0fe61a957310ead10a7cb4b81e170ce61e5baa73a6291ac2
 TERMUX_PKG_SRCURL=https://github.com/fukuchi/libqrencode/archive/v$TERMUX_PKG_VERSION.tar.gz
 TERMUX_PKG_DEPENDS="libandroid-support, libpng, zlib"
+TERMUX_PKG_BREAKS="libqrencode-dev"
+TERMUX_PKG_REPLACES="libqrencode-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="-DBUILD_SHARED_LIBS=ON"

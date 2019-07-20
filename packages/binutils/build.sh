@@ -6,6 +6,8 @@ TERMUX_PKG_REVISION=4
 TERMUX_PKG_SHA256=9b0d97b3d30df184d302bced12f976aa1e5fbf4b0be696cdebc6cca30411a46e
 TERMUX_PKG_SRCURL=https://mirrors.kernel.org/gnu/binutils/binutils-${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_DEPENDS="libc++, zlib"
+TERMUX_PKG_BREAKS="binutils-dev"
+TERMUX_PKG_REPLACES="binutils-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--enable-gold --enable-plugins --disable-werror --with-system-zlib --enable-new-dtags"
 TERMUX_PKG_EXTRA_MAKE_ARGS="tooldir=$TERMUX_PREFIX"
 TERMUX_PKG_RM_AFTER_INSTALL="share/man/man1/windmc.1 share/man/man1/windres.1 bin/ld.bfd"

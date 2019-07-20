@@ -4,6 +4,8 @@ TERMUX_PKG_LICENSE="BSD 2-Clause"
 TERMUX_PKG_VERSION=0.2
 TERMUX_PKG_REVISION=1
 TERMUX_PKG_DEPENDS="openssl"
+TERMUX_PKG_BREAKS="libcrypt-dev"
+TERMUX_PKG_REPLACES="libcrypt-dev"
 
 termux_step_make_install() {
 	$CC $CFLAGS $CPPFLAGS $LDFLAGS -Wall -Wextra -fPIC -shared $TERMUX_PKG_BUILDER_DIR/crypt3.c -lcrypto -o $TERMUX_PREFIX/lib/libcrypt.so

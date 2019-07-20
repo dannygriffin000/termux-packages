@@ -7,6 +7,8 @@ TERMUX_PKG_REVISION=1
 TERMUX_PKG_SRCURL="https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-$TERMUX_PKG_VERSION.tar.gz"
 TERMUX_PKG_SHA256=7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825
 TERMUX_PKG_DEPENDS="dbus, glib"
+TERMUX_PKG_BREAKS="dbus-glib-dev"
+TERMUX_PKG_REPLACES="dbus-glib-dev"
 TERMUX_PKG_HOSTBUILD=true
 
 termux_step_host_build() {

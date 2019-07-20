@@ -6,4 +6,6 @@ TERMUX_PKG_REVISION=2
 TERMUX_PKG_SRCURL=https://github.com/silnrsi/graphite/archive/${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_SHA256=2f9f609deeddfe2b193502adc8df3b0396694b799a433c36e85fd1242e654cd9
 TERMUX_PKG_DEPENDS="libc++"
+TERMUX_PKG_BREAKS="libgraphite-dev"
+TERMUX_PKG_REPLACES="libgraphite-dev"
 TERMUX_PKG_RM_AFTER_INSTALL="bin/gr2fonttest"

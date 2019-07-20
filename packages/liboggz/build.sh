@@ -6,3 +6,5 @@ TERMUX_PKG_REVISION=3
 TERMUX_PKG_SRCURL=http://downloads.xiph.org/releases/liboggz/liboggz-${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_SHA256=6bafadb1e0a9ae4ac83304f38621a5621b8e8e32927889e65a98706d213d415a
 TERMUX_PKG_DEPENDS="libogg"
+TERMUX_PKG_BREAKS="liboggz-dev"
+TERMUX_PKG_REPLACES="liboggz-dev"

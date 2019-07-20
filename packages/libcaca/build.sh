@@ -6,6 +6,8 @@ TERMUX_PKG_REVISION=5
 TERMUX_PKG_SRCURL=http://fossies.org/linux/privat/libcaca-${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_SHA256=128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4
 TERMUX_PKG_DEPENDS="libc++, ncurses, zlib"
+TERMUX_PKG_BREAKS="libcaca-dev"
+TERMUX_PKG_REPLACES="libcaca-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--disable-python --disable-java --disable-ruby --disable-doc"
 
 termux_step_post_configure() {

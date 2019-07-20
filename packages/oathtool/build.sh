@@ -6,6 +6,8 @@ TERMUX_PKG_REVISION=2
 TERMUX_PKG_SRCURL=http://download.savannah.nongnu.org/releases/oath-toolkit/oath-toolkit-$TERMUX_PKG_VERSION.tar.gz
 TERMUX_PKG_SHA256=b03446fa4b549af5ebe4d35d7aba51163442d255660558cd861ebce536824aa0
 TERMUX_PKG_DEPENDS="xmlsec, zlib"
+TERMUX_PKG_BREAKS="oathtool-dev"
+TERMUX_PKG_REPLACES="oathtool-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--disable-pam"
 
 termux_step_pre_configure() {

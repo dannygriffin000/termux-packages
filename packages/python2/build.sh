@@ -6,6 +6,8 @@ TERMUX_PKG_LICENSE="PythonPL"
 # libbz2 for the bz2 module.
 # ncurses-ui-libs for the curses.panel module.
 TERMUX_PKG_DEPENDS="libandroid-support, ncurses, readline, libffi, openssl, libbz2, libsqlite, gdbm, ncurses-ui-libs, libcrypt, zlib"
+TERMUX_PKG_BREAKS="python2-dev"
+TERMUX_PKG_REPLACES="python2-dev"
 # Python.h includes crypt.h:
 TERMUX_PKG_HOSTBUILD=true
 

@@ -7,6 +7,8 @@ TERMUX_PKG_REVISION=6
 TERMUX_PKG_SRCURL=https://github.com/steveicarus/iverilog/archive/v${TERMUX_PKG_VERSION/./_}.tar.gz
 TERMUX_PKG_SHA256=f54d91821223c71c70f4735a1fb2af39c62efbccdeb9b0060ea1cf9c67647ee3
 TERMUX_PKG_DEPENDS="libbz2, libc++, readline, zlib"
+TERMUX_PKG_BREAKS="iverilog-dev"
+TERMUX_PKG_REPLACES="iverilog-dev"
 
 termux_step_pre_configure() {
 	LDFLAGS+=" -lm"

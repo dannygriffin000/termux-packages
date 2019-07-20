@@ -7,6 +7,8 @@ TERMUX_PKG_REVISION=3
 TERMUX_PKG_SRCURL=http://profanity.im/profanity-${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_SHA256=f1b2773b79eb294297686f3913e9489c20effae5e3a335c8956db18f6ee2f660
 TERMUX_PKG_DEPENDS="libandroid-support, libffi, ncurses, glib, libmesode, libcurl, readline, libuuid, libotr, gpgme, python, libassuan, libgpg-error, zlib"
+TERMUX_PKG_BREAKS="profanity-dev"
+TERMUX_PKG_REPLACES="profanity-dev"
 # openssl, libexpat needed by libmesode, pcre needed by glib:
 TERMUX_PKG_BUILD_DEPENDS="openssl, libexpat, pcre, libgcrypt, libcrypt"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS=" --disable-python-plugins"

@@ -38,7 +38,8 @@ lib/python${_MAJOR_VERSION}/test
 lib/python${_MAJOR_VERSION}/*/test
 lib/python${_MAJOR_VERSION}/*/tests
 "
-TERMUX_PKG_BREAKS="python2 (<= 2.7.15)"
+TERMUX_PKG_BREAKS="python2 (<= 2.7.15), python-dev"
+TERMUX_PKG_REPLACES="python-dev"
 
 termux_step_pre_configure() {
 	# Needed when building with clang, as setup.py only probes

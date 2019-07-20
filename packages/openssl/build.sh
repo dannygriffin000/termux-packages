@@ -10,8 +10,8 @@ TERMUX_PKG_CONFFILES="etc/tls/openssl.cnf"
 TERMUX_PKG_RM_AFTER_INSTALL="bin/c_rehash etc/ssl/misc"
 TERMUX_PKG_BUILD_IN_SRC=yes
 TERMUX_PKG_CONFLICTS="libcurl (<< 7.61.0-1)"
-TERMUX_PKG_BREAKS="openssl-tool (<< 1.1.1b-1)"
-TERMUX_PKG_REPLACES="openssl-tool (<< 1.1.1b-1)"
+TERMUX_PKG_BREAKS="openssl-tool (<< 1.1.1b-1), openssl-dev"
+TERMUX_PKG_REPLACES="openssl-tool (<< 1.1.1b-1), openssl-dev"
 
 termux_step_configure() {
 	CFLAGS+=" -DNO_SYSLOG"

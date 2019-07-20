@@ -7,6 +7,8 @@ TERMUX_PKG_REVISION=2
 TERMUX_PKG_SRCURL=https://github.com/erikd/libsndfile/archive/826d5296da54c016e3cb0f7f00de3b9e295b9c4a.zip
 TERMUX_PKG_SHA256=84651201a8468c448f1fd172a48ccf47f3761d23fd0f59bcaaf908050e9eeb7c
 TERMUX_PKG_DEPENDS="libflac, libvorbis"
+TERMUX_PKG_BREAKS="libsndfile-dev"
+TERMUX_PKG_REPLACES="libsndfile-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--disable-sqlite --disable-alsa"
 TERMUX_PKG_RM_AFTER_INSTALL="bin/ share/man/man1/"
 

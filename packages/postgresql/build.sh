@@ -26,8 +26,8 @@ ZIC=$TERMUX_PKG_HOSTBUILD_DIR/src/timezone/zic
 TERMUX_PKG_EXTRA_MAKE_ARGS=" -s"
 TERMUX_PKG_RM_AFTER_INSTALL="lib/libecpg* bin/ecpg share/man/man1/ecpg.1"
 TERMUX_PKG_HOSTBUILD=yes
-TERMUX_PKG_BREAKS="postgresql-contrib (<= 10.3-1)"
-TERMUX_PKG_REPLACES="postgresql-contrib (<= 10.3-1)"
+TERMUX_PKG_BREAKS="postgresql-contrib (<= 10.3-1), postgresql-dev"
+TERMUX_PKG_REPLACES="postgresql-contrib (<= 10.3-1), postgresql-dev"
 
 termux_step_host_build() {
 	# Build a native zic binary which we have patched to

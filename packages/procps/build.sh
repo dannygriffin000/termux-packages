@@ -16,6 +16,8 @@ ac_cv_header_stdio_ext_h=no
 --disable-modern-top
 "
 TERMUX_PKG_DEPENDS="ncurses"
+TERMUX_PKG_BREAKS="procps-dev"
+TERMUX_PKG_REPLACES="procps-dev"
 # About kill: https://bugs.launchpad.net/ubuntu/+source/coreutils/+bug/141168:
 # "For compatibility between distributions, can we have /bin/kill made available from coreutils?"
 # About uptime: Does not work on later android versions as /proc/uptime cannot be read.

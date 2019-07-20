@@ -6,4 +6,6 @@ TERMUX_PKG_VERSION=0.24.1
 TERMUX_PKG_SRCURL=https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-$TERMUX_PKG_VERSION.tar.gz
 TERMUX_PKG_SHA256=9e0df1d8f857e0270cf0b32e2d1ca5a24aa7282873361785d573f72ad7f7d5eb
 TERMUX_PKG_DEPENDS="dbus-glib"
+TERMUX_PKG_BREAKS="telepathy-glib-dev"
+TERMUX_PKG_REPLACES="telepathy-glib-dev"
 TERMUX_PKG_BUILD_IN_SRC=true

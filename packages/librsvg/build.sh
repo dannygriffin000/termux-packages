@@ -6,6 +6,8 @@ TERMUX_PKG_REVISION=2
 TERMUX_PKG_SRCURL=http://ftp.gnome.org/pub/GNOME/sources/librsvg/${TERMUX_PKG_VERSION:0:4}/librsvg-${TERMUX_PKG_VERSION}.tar.xz
 TERMUX_PKG_SHA256=d4399eb76eb4e955fd36a5e536e4cb965ccfafbbc72e3b43495e08ac2a61f993
 TERMUX_PKG_DEPENDS="libcroco, pango, gdk-pixbuf, libcairo-gobject, zlib"
+TERMUX_PKG_BREAKS="librsvg-dev"
+TERMUX_PKG_REPLACES="librsvg-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--disable-introspection --disable-pixbuf-loader"
 
 termux_step_pre_configure() {

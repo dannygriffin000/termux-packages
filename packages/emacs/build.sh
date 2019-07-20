@@ -5,6 +5,8 @@ TERMUX_PKG_VERSION=26.2
 TERMUX_PKG_SHA256=151ce69dbe5b809d4492ffae4a4b153b2778459de6deb26f35691e1281a9c58e
 TERMUX_PKG_SRCURL=https://mirrors.kernel.org/gnu/emacs/emacs-${TERMUX_PKG_VERSION}.tar.xz
 TERMUX_PKG_DEPENDS="ncurses, gnutls, libxml2"
+TERMUX_PKG_BREAKS="emacs-dev"
+TERMUX_PKG_REPLACES="emacs-dev"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 --disable-autodepend
 --with-gif=no
