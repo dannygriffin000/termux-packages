@@ -30,9 +30,9 @@ ac_cv_header_locale_h=no
 --without-ada
 --without-cxx-binding
 --without-debug
---without-normal
---without-static
 --without-tests
+--with-normal
+--with-static
 --with-shared
 "
 
@@ -57,13 +57,17 @@ termux_step_post_make_install() {
 		for file in lib${lib}w.so*; do
 			ln -s $file ${file/w./.}
 		done
+		for file in lib${lib}w.a; do
+			ln -s $file ${file/w./.}
+		done
 		(cd pkgconfig; ln -sf ${lib}w.pc $lib.pc)
 	done
 	# some packages want libcurses while building/compiling
-	rm -f libcurses.so*
+	rm -f libcurses.so* libcurses.a
 	for file in libncurses.so*; do
 		ln -s $file ${file/libn/lib}
 	done
+	ln -s libncurses.a libcurses.a
 
 	# Some packages want these:
 	cd $TERMUX_PREFIX/include/
