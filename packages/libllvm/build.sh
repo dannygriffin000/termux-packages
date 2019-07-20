@@ -25,8 +25,8 @@ TERMUX_PKG_DEPENDS="binutils, libc++, ncurses, ndk-sysroot, libffi, zlib"
 # Replace gcc since gcc is deprecated by google on android and is not maintained upstream.
 # Conflict with clang versions earlier than 3.9.1-3 since they bundled llvm.
 TERMUX_PKG_CONFLICTS="gcc, clang (<< 3.9.1-3)"
-TERMUX_PKG_BREAKS="libllvm-dev"
-TERMUX_PKG_REPLACES="gcc, libllvm-dev"
+TERMUX_PKG_BREAKS="libclang, libclang-dev, libllvm-dev"
+TERMUX_PKG_REPLACES="gcc, libclang, libclang-dev, libllvm-dev"
 # See http://llvm.org/docs/CMake.html:
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -DPYTHON_EXECUTABLE=$(which python3)
