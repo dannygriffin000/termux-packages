@@ -3,7 +3,6 @@ TERMUX_PKG_DESCRIPTION="Python 3 programming language intended to enable clear p
 TERMUX_PKG_LICENSE="PythonPL"
 TERMUX_PKG_DEPENDS="libandroid-support, ncurses, readline, libffi, openssl, libbz2, libsqlite, gdbm, ncurses-ui-libs, libcrypt, liblzma, zlib"
 # Python.h includes crypt.h:
-TERMUX_PKG_DEVPACKAGE_DEPENDS="libcrypt-dev"
 _MAJOR_VERSION=3.7
 TERMUX_PKG_VERSION=${_MAJOR_VERSION}.4
 TERMUX_PKG_SHA256=fb799134b868199930b75f26678f18932214042639cd52b16da7fd134cd9b13f

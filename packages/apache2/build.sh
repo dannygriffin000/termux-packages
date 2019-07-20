@@ -68,7 +68,6 @@ ac_cv_have_threadsafe_pollset=no
 "
 TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_RM_AFTER_INSTALL="share/apache2/manual etc/apache2/original share/man/man8/suexec.8 libexec/httpd.exp"
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="share/apache2/build"
 TERMUX_PKG_EXTRA_MAKE_ARGS="-s"
 
 termux_step_pre_configure() {

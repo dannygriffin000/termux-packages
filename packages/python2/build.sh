@@ -7,7 +7,6 @@ TERMUX_PKG_LICENSE="PythonPL"
 # ncurses-ui-libs for the curses.panel module.
 TERMUX_PKG_DEPENDS="libandroid-support, ncurses, readline, libffi, openssl, libbz2, libsqlite, gdbm, ncurses-ui-libs, libcrypt, zlib"
 # Python.h includes crypt.h:
-TERMUX_PKG_DEVPACKAGE_DEPENDS="libcrypt-dev"
 TERMUX_PKG_HOSTBUILD=true
 
 _MAJOR_VERSION=2.7

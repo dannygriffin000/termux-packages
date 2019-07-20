@@ -10,7 +10,6 @@ TERMUX_PKG_SRCURL=(http://www.cpan.org/src/5.0/perl-${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_BUILD_IN_SRC="yes"
 TERMUX_MAKE_PROCESSES=1
 TERMUX_PKG_RM_AFTER_INSTALL="bin/perl${TERMUX_PKG_VERSION}"
-TERMUX_PKG_NO_DEVELSPLIT=yes
 
 termux_step_post_extract_package() {
 	# This port uses perl-cross: http://arsv.github.io/perl-cross/

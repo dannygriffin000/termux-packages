@@ -29,8 +29,6 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -DLLVM_TABLEGEN=$TERMUX_PKG_HOSTBUILD_DIR/bin/llvm-tblgen
 -DPYTHON_EXECUTABLE=$(which python3)
 "
-TERMUX_PKG_KEEP_STATIC_LIBRARIES=true
-TERMUX_PKG_NO_DEVELSPLIT=yes
 
 termux_step_post_extract_package() {
 	mv llvm-${TERMUX_PKG_VERSION[1]}.src llvm

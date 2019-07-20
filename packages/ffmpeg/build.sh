@@ -7,7 +7,6 @@ TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=f1f049a82fcfbf156564e73a3935d7e750891fab2abf302e735104fd4050a7e1
 TERMUX_PKG_SRCURL=https://www.ffmpeg.org/releases/ffmpeg-${TERMUX_PKG_VERSION}.tar.xz
 TERMUX_PKG_DEPENDS="libass, libbz2, libiconv, libsoxr, libx264, libx265, xvidcore, libvorbis, libmp3lame, libopus, libvpx, libgnutls, libandroid-glob, freetype, zlib, liblzma"
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="share/ffmpeg/examples"
 TERMUX_PKG_CONFLICTS="libav"
 
 termux_step_configure() {

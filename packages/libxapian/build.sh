@@ -8,4 +8,3 @@ TERMUX_PKG_SHA256=9f16b2f3e2351a24034d7636f73566ab74c3f0729e9e0492934e956b25c5bc
 # Note that we cannot /proc/sys/kernel/random/uuid (permission denied on
 # new android versions) so need libuuid.
 TERMUX_PKG_DEPENDS="libc++, libuuid, zlib"
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="bin/xapian-config share/man/man1/xapian-config.1"

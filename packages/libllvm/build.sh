@@ -51,7 +51,6 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -DLLVM_ENABLE_FFI=ON
 "
 TERMUX_PKG_FORCE_CMAKE=yes
-TERMUX_PKG_KEEP_STATIC_LIBRARIES=true
 TERMUX_PKG_HAS_DEBUG=no
 # Debug build succeeds but make install with:
 # cp: cannot stat '../src/projects/openmp/runtime/exports/common.min.50.ompt.optional/include/omp.h': No such file or directory

@@ -7,7 +7,6 @@ TERMUX_PKG_SHA256=809668ffc296043779c984f53461c2b3987a45b7a25eb2f0a1d11d9f23ba40
 TERMUX_PKG_SRCURL=https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-${TERMUX_PKG_VERSION}.tar.xz
 TERMUX_PKG_DEPENDS="libltdl, libsndfile, libandroid-glob, libsoxr, speexdsp"
 TERMUX_PKG_BUILD_DEPENDS="libtool"
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="share/vala"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--disable-neon-opt
 --disable-alsa
 --disable-esound

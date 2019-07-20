@@ -32,10 +32,7 @@ ac_cv_header_locale_h=no
 --without-tests
 --with-shared
 "
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="
-share/man/man1/ncursesw6-config.1*
-bin/ncursesw6-config
-"
+
 TERMUX_PKG_RM_AFTER_INSTALL="
 bin/captoinfo
 bin/infotocap

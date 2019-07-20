@@ -17,7 +17,6 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 --with-ssl
 "
 
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="bin/curl-config share/man/man1/curl-config.1"
 
 # Starting with version 7.62 curl started enabling http/2 by default.
 # Support for http/2 as added in version 1.4.8-8 of the apt package, so we

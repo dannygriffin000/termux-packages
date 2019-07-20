@@ -19,8 +19,6 @@ tcl_cv_strtoul_unbroken=ok
 --enable-man-symlinks
 --mandir=$TERMUX_PREFIX/share/man
 "
-TERMUX_PKG_KEEP_STATIC_LIBRARIES=yes
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="lib/*.a lib/itcl*/*.a lib/tdbc*/libtdbcstub*.a"
 
 termux_step_pre_configure() {
 	TERMUX_PKG_SRCDIR=$TERMUX_PKG_SRCDIR/unix

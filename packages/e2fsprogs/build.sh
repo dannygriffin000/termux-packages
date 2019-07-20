@@ -6,8 +6,6 @@ TERMUX_PKG_MAINTAINER="Leonid Plyushch <leonid.plyushch@gmail.com>"
 TERMUX_PKG_VERSION=1.45.3
 TERMUX_PKG_SRCURL=https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v$TERMUX_PKG_VERSION/e2fsprogs-$TERMUX_PKG_VERSION.tar.xz
 TERMUX_PKG_SHA256=90d10066b815e27b0b4875f0d5e396c663e0bf55aa3ca10868978d10c6ffe595
-TERMUX_PKG_KEEP_STATIC_LIBRARIES=true
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="lib/*.a"
 TERMUX_PKG_CONFFILES="etc/mke2fs.conf"
 
 ## util-linux provides libblkid

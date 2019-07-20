@@ -15,7 +15,6 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 ac_cv_func_strerror_r=no
 --enable-readline
 "
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="src/libsqlite/tclsqlite3.c"
 
 termux_step_pre_configure() {
 	CPPFLAGS+=" -Werror -DSQLITE_ENABLE_DBSTAT_VTAB=1"

@@ -9,11 +9,10 @@ TERMUX_PKG_SHA256=a7462f8e29163faa52ad2ac658727b60f95241449832f1a4dac8d8a406d182
 TERMUX_PKG_DEPENDS="libc++, libiconv, freetype, libpng, libgd, libgmp, libmpfr, libicu, liblua, poppler, libgraphite, harfbuzz, harfbuzz-icu, teckit, libpixman, libcairo, zlib"
 # libpcre, glib, fonconfig are dependencies to libcairo. pkg-config gives an error if they are missing
 # libuuid, libxml2 are needed by fontconfig
-TERMUX_PKG_BUILD_DEPENDS="icu-devtools, pcre-dev, glib-dev, fontconfig, libuuid-dev, libxml2-dev"
+TERMUX_PKG_BUILD_DEPENDS="icu-devtools, pcre, glib, fontconfig, libuuid, libxml2"
 TERMUX_PKG_BREAKS="texlive (<< 20180414)"
 TERMUX_PKG_REPLACES="texlive (<< 20170524-3)"
 TERMUX_PKG_RECOMMENDS="texlive"
-TERMUX_PKG_NO_DEVELSPLIT=yes
 TERMUX_PKG_HOSTBUILD=true
 
 TL_ROOT=$TERMUX_PREFIX/share/texlive

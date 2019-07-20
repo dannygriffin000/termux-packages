@@ -5,8 +5,6 @@ TERMUX_PKG_VERSION=2.3.0
 TERMUX_PKG_REVISION=4
 TERMUX_PKG_REPLACES="duktape (<< 2.3.0-1)"
 TERMUX_PKG_BREAKS="duktape (<< 2.3.0-1)"
-TERMUX_PKG_DEVPACKAGE_BREAKS="duktape-dev"
-TERMUX_PKG_DEVPACKAGE_REPLACES="duktape-dev"
 TERMUX_PKG_BUILD_IN_SRC=yes
 
 termux_step_extract_package() {

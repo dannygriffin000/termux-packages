@@ -5,7 +5,7 @@ TERMUX_PKG_MAINTAINER="Vishal Biswas @vishalbiswas"
 TERMUX_PKG_VERSION=0.44.5
 TERMUX_PKG_SRCURL=https://download.gnome.org/sources/vala/${TERMUX_PKG_VERSION:0:4}/vala-$TERMUX_PKG_VERSION.tar.xz
 TERMUX_PKG_SHA256=bb8f8185b805411511786733c4b769c3ee6af8bc879609bffb6c46b8999bc27f
-TERMUX_PKG_DEPENDS="clang, glib-dev, pkg-config"
+TERMUX_PKG_DEPENDS="clang, glib, pkg-config"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--with-cgraph=no"
 
 termux_step_post_make_install() {

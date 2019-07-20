@@ -6,5 +6,4 @@ TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca
 TERMUX_PKG_SRCURL=https://fossies.org/linux/misc/libpng-$TERMUX_PKG_VERSION.tar.xz
 TERMUX_PKG_DEPENDS="zlib"
-TERMUX_PKG_INCLUDE_IN_DEVPACKAGE="bin/libpng-config bin/libpng16-config"
 TERMUX_PKG_RM_AFTER_INSTALL="bin/png-fix-itxt bin/pngfix"
