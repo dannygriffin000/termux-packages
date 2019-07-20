@@ -4,6 +4,7 @@ TERMUX_PKG_LICENSE="GPL-2.0"
 # NOTE: We only build the libelf part of elfutils for now,
 # as other parts are not clang compatible.
 TERMUX_PKG_VERSION=0.176
+TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=eb5747c371b0af0f71e86215a5ebb88728533c3a104a43d4231963f308cd1023
 TERMUX_PKG_BREAKS="libelf-dev"
 TERMUX_PKG_REPLACES="libelf-dev"

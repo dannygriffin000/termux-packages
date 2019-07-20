@@ -2,6 +2,7 @@ TERMUX_PKG_HOMEPAGE=https://www.gnupg.org/related_software/libgpg-error/
 TERMUX_PKG_DESCRIPTION="Small library that defines common error values for all GnuPG components"
 TERMUX_PKG_LICENSE="LGPL-2.0"
 TERMUX_PKG_VERSION=1.36
+TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=babd98437208c163175c29453f8681094bcaf92968a15cafb1a276076b33c97c
 TERMUX_PKG_BREAKS="libgpg-error-dev"
 TERMUX_PKG_REPLACES="libgpg-error-dev"

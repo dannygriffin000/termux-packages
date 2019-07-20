@@ -5,6 +5,7 @@ TERMUX_PKG_DEPENDS="libandroid-support, libmpfr, libgmp, readline"
 TERMUX_PKG_BREAKS="gawk-dev"
 TERMUX_PKG_REPLACES="gawk-dev"
 TERMUX_PKG_VERSION=5.0.1
+TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=8e4e86f04ed789648b66f757329743a0d6dfb5294c3b91b756a474f1ce05a794
 TERMUX_PKG_SRCURL=https://mirrors.kernel.org/gnu/gawk/gawk-${TERMUX_PKG_VERSION}.tar.xz
 TERMUX_PKG_RM_AFTER_INSTALL="bin/gawk-* bin/igawk share/man/man1/igawk.1"

@@ -5,6 +5,7 @@ TERMUX_PKG_DEPENDS="libandroid-support, ncurses, readline, libffi, openssl, libb
 # Python.h includes crypt.h:
 _MAJOR_VERSION=3.7
 TERMUX_PKG_VERSION=${_MAJOR_VERSION}.4
+TERMUX_PKG_REVISION=1
 TERMUX_PKG_SHA256=fb799134b868199930b75f26678f18932214042639cd52b16da7fd134cd9b13f
 TERMUX_PKG_SRCURL=https://www.python.org/ftp/python/${TERMUX_PKG_VERSION}/Python-${TERMUX_PKG_VERSION}.tar.xz
 
