@@ -12,6 +12,7 @@ TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_MAINTAINER="Vishal Biswas @vishalbiswas"
 TERMUX_PKG_CONFLICTS="librhash, rhash-dev"
 TERMUX_PKG_REPLACES="librhash, rhash-dev"
+TERMUX_PKG_EXTRA_CONFIGURE_ARGS="--disable-static --enable-lib-static --enable-lib-shared"
 
 termux_step_make() {
 	CFLAGS="-DOPENSSL_RUNTIME $CPPFLAGS $CFLAGS"
